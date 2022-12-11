@@ -20,7 +20,7 @@ bot.context.db = { answer: "", msg_id: 1 };
 // bot.context.db = { msg_id: 0 }
 
 
-bot.hears('👴 Dad Jokes', async ctx => {
+bot.hears('👨 Dad Jokes', async ctx => {
     ctx.replyWithHTML('<b>Dad Jokes</b>')
     try {
         const request = await require('request');
