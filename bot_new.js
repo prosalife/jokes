@@ -14,7 +14,8 @@ const axios = require("axios");
 const { Telegraf, Markup, Stage, session, Scenes, Extra } = require('telegraf')
 // const WizardScene = require('telegraf')
 const TOKEN = "5747242462:AAGNcu7rDBmQfZJA7duunUPkgyG-AQC5XyM";
-//const TOKEN = "5395801587:AAEXAIITmogdfFDuctWziKEMAT45flIK154"; onlq bot
+// onlq bot
+//const TOKEN = "5395801587:AAEXAIITmogdfFDuctWziKEMAT45flIK154";
 const NINJA_API = 'Su4JLIQNivO/wvaBohLd8A==yhZbmG6XnYrncjfl'
 const bot = new Telegraf(TOKEN);
 bot.context.db = { answer: "", msg_id: 1 };
@@ -22,7 +23,7 @@ bot.context.db = { answer: "", msg_id: 1 };
 
 bot.command('owner', async ctx => {
     await ctx.replyWithHTML(
-        `Author: <i>Mikhail Krainov</i>, Email: <i>prosalife@gmail.com</i>`)
+        `Author: <i>Mikhail Krainov</i>\nEmail: <i>prosalife@gmail.com</i>`)
 })
 
 bot.hears('👨 Dad Jokes', async ctx => {
